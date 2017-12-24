@@ -1,4 +1,5 @@
-(ns petri.core)
+(ns petri.quantity
+  "Petri nets with integer markings and weighted inputs/outputs.")
 
 (defn enabled? [transition markings]
   (every? (fn [[place marks]]
